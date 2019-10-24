@@ -1,0 +1,22 @@
+<h1>Coordinators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Coordenador</th>
+      <th>Matrícula</th>
+      <th>Senha</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @coordinators.each do |coordinator| %>
+      <tr>
+        <td><%= coordinator.nome %></td>
+        <td><%= coordinator.matricula %></td>
+        <td><%= coordinator.senha %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Instrutor:</strong>
+  <%= @course.instrutor %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @course.email %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @course.titulo %>
+</p>
+
+<p>
+  <strong>Carga horaria:</strong>
+  <%= @course.carga_horaria %>
+</p>
+
+<p>
+  <strong>Vagas:</strong>
+  <%= @course.vagas %>
+</p>
+
+<p>
+  <strong>Pre requisito:</strong>
+  <%= @course.pre_requisito %>
+</p>
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>
