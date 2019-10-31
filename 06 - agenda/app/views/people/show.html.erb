@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @person.nome %>
+</p>
+
+<p>
+  <strong>Idade:</strong>
+  <%= @person.idade %>
+</p>
+
+<h3>CONTATOS</h3>
+
+<% for contato in @person.contacts  %>
+	<%= contato.valor %> (<%= contato.tipo%>)
+	<br>
+<% end %>
+
+<br>
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>
